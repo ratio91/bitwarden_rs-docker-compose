@@ -16,7 +16,7 @@ rename `sample.env` to `.env`
 ## run with docker (normal mode)
 `docker-compose up -d`
 
-# OR 
+**OR**
 
 ## run with docker (swarm mode)
 `docker stack deploy -c docker-compose.swarm.yml bitwarden`
