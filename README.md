@@ -1,5 +1,5 @@
-# bitwarden_rs-docker-compose
-a sample configuration of `bitwarden_rs`, a seld-hosted password manager I use daily  
+# sample docker-compose files for running bitwarden_rs with docker
+this repository contains a sample configuration of `bitwarden_rs`, a self-hosted password manager I use daily  
 
 ## prerequisites  
 
