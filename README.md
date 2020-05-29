@@ -11,10 +11,16 @@ instruction
 ## configure   
 fill in your details in the `sample.env` file   
 rename `sample.env` to `.env`
-(the SMTP and yubikey instructions are optional, you can remove them from the docker-compose file if you want)  
+(the SMTP and yubikey instructions are optional, you can remove them from the .env file if you want)  
 
-## run  
+## run with docker (normal mode)
 `docker-compose up -d`
+
+# OR 
+
+## run with docker (swarm mode)
+`docker stack deploy -c docker-compose.swarm.yml bitwarden`
+
 
 ## use
 
