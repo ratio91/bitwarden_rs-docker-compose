@@ -1,0 +1,23 @@
+version: '3.3'
+
+volumes:
+ bitwarden:
+
+services:
+ bitwarden:
+  image: bitwardenrs/server:alpine
+  volumes:
+  - type: volume
+    source: bitwarden
+    target: /data/ 
+  env_file: .env
+  deploy:
+    restart_policy:
+     condition: on-failure
+    labels:
+    - traefik.enable=true
+    - traefik.http.routers.bitwarden.tls=true
+    - traefik.http.routers.bitwarden.rule=Host(`${BITWARDEN_DOMAIN}`)
+    - traefik.http.routers.bitwarden.entrypoints=web-secure
+    - traefik.http.routers.bitwarden.tls.certresolver=mytlschallenge
+    - traefik.http.services.bitwarden.loadbalancer.server.port=80
