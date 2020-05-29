@@ -1,5 +1,5 @@
 # bitwarden_rs-docker-compose
-a sample configuration of `bitwarden_rs` I use daily  
+a sample configuration of `bitwarden_rs`, a seld-hosted password manager I use daily  
 
 ## prerequisites  
 
