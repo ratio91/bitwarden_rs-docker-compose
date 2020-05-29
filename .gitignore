@@ -1,2 +1,2 @@
-bw-data/
+#never commit & push your actual .env files!
 .env
